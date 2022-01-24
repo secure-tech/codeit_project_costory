@@ -16,7 +16,7 @@
 <!-- post_detail content-->
 {% block content %}
   <div class="content">
-    <p class="text">{{post.content}}</p>
+    <p class="text">{{post.content|linebreaksbr}}</p>
     <p class="date_md">수정일
       <span>{{post.dt_modified}}</span></p>
   </div>
