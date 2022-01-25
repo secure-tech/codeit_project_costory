@@ -12,6 +12,7 @@
     <form method="POST">{% csrf_token %}
       <div class="confirm_btn">
         <input type="submit" value="삭제하기">
+        <a href="{% url 'post-detail' post.id %}">돌아가기</a>
       </div>
     </form>
   </div>

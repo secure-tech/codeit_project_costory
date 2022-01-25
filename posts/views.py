@@ -4,6 +4,9 @@ from .forms import PostForm
 
 # Create your views here.
 
+def index(request):
+    return redirect('post-list')
+
 def post_list(request):
     posts = Post.objects.all()
     cont = {"posts":posts}
